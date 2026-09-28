@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="el" data-theme="greek">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Επικοινωνία: υποστήριξη Greek IPTV 24/7 | Greeks IPTV</title>
+  <meta name="description" content="Επικοινωνήστε με το Greeks IPTV μέσω WhatsApp ή email, 24/7, για δοκιμή Greek IPTV, παραγγελίες και βοήθεια εγκατάστασης.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://greeksiptv.gr/contact.html">
+  <meta name="theme-color" content="#050d1f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Greeks IPTV">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:url" content="https://greeksiptv.gr/contact.html">
+  <meta property="og:title" content="Επικοινωνία: υποστήριξη Greek IPTV 24/7 | Greeks IPTV">
+  <meta property="og:description" content="Επικοινωνήστε με το Greeks IPTV μέσω WhatsApp ή email, 24/7, για δοκιμή Greek IPTV, παραγγελίες και βοήθεια εγκατάστασης.">
+  <meta property="og:image" content="https://greeksiptv.gr/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="author" content="Greeks IPTV">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="fonts/icons/icons.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://greeksiptv.gr/"}, {"@type": "ListItem", "position": 2, "name": "Επικοινωνία", "item": "https://greeksiptv.gr/contact.html"}]}]</script>
+</head>
+<body data-page="contact">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">GREEKS <span>IPTV</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">Αρχική</a>
+      <a href="/#pricing">Τιμές</a>
+      <a href="/reseller.html">Πρόγραμμα Μεταπωλητών</a>
+      <a href="/contact.html" class="active">Επικοινωνία</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-cut js-trial" data-wa="Hi! I want a free trial">Δωρεάν δοκιμή</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="waves waves-left" aria-hidden="true"></div>
+  <div class="waves waves-right" aria-hidden="true"></div>
+  <div class="container" style="position:relative">
+    <div class="crumbs"><a href="index.html">Αρχική</a> / Επικοινωνία</div>
+    <h1>Επικοινωνία</h1>
+    <p>Η ομάδα μας είναι διαθέσιμη 24/7 για παραγγελίες, δοκιμές, εγκατάσταση, προβλήματα σύνδεσης και ποιότητα εικόνας.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:10px">
+  <div class="contact-cards">
+    <a class="contact-card" href="#" data-wa="Hi *TV Service*! I need more info">
+      <i class="fa-brands fa-whatsapp"></i><h2>WhatsApp</h2><p>Η πιο γρήγορη απάντηση</p>
+    </a>
+    <a class="contact-card" href="mailto:greeksiptv@gmail.com?subject=greeksiptv.gr">
+      <i class="fa-regular fa-envelope"></i><h2>Email</h2><p>Απάντηση εντός λίγων ωρών</p>
+    </a>
+  </div>
+
+  <div class="contact-form">
+    <form id="contactForm">
+      <label>Όνομα<input name="name" required autocomplete="name"></label>
+      <label>Θέμα
+        <select name="topic">
+          <option>Δωρεάν δοκιμή</option><option>Παραγγελία</option><option>Βοήθεια εγκατάστασης</option>
+          <option>Ανανέωση συνδρομής</option><option>Πρόγραμμα Μεταπωλητών</option><option>Άλλο</option>
+        </select>
+      </label>
+      <label>Μήνυμα<textarea name="msg" rows="4" required></textarea></label>
+      <div class="row">
+        <button type="submit" class="btn btn-cut" data-via="wa"><i class="fa-brands fa-whatsapp"></i> Αποστολή μέσω WhatsApp</button>
+        <button type="submit" class="btn btn-cut" data-via="mail" style="background:#fff"><i class="fa-regular fa-envelope"></i> Αποστολή μέσω email</button>
+      </div>
+    </form>
+  </div>
+</section>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const d = new FormData(this), via = (e.submitter || {}).dataset?.via || "wa";
+  const text = `${d.get("topic")}\nName: ${d.get("name")}\n\n${d.get("msg")}`;
+  if (via === "mail") location.href = `mailto:greeksiptv@gmail.com?subject=${encodeURIComponent("greeksiptv.gr - " + d.get("topic"))}&body=${encodeURIComponent(text)}`;
+  else window.open(`https://api.whatsapp.com/send/?phone=${SITE.whatsapp}&text=${encodeURIComponent(text)}`, "_blank");
+});
+</script>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a href="index.html" class="logo">GREEKS <span>IPTV</span></a>
+      <p>Η υπηρεσία μας προσφέρει υψηλής ποιότητας streaming με φιλική υποστήριξη πριν και μετά την αγορά.</p>
+      <div class="f-social">
+        <a href="#" data-wa="Hi *TV Service*! I need more info" aria-label="WhatsApp" class="fs-wa"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:greeksiptv@gmail.com?subject=greeksiptv.gr" aria-label="Email" class="fs-mail"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+    <nav class="f-col" aria-label="Services">
+      <h3>Υπηρεσίες</h3>
+      <a href="index.html#pricing">Τιμές</a>
+      <a href="setup-guide.html">Οδηγός εγκατάστασης</a>
+      <a href="/blog/">Blog</a>
+      <a href="reseller.html">Πρόγραμμα Μεταπωλητών</a>
+      <a href="#" data-wa="Hi! I want a free trial">Δωρεάν δοκιμή</a>
+    </nav>
+    <nav class="f-col" aria-label="Company">
+      <h3>Εταιρεία</h3>
+      <a href="about.html">Σχετικά με εμάς</a>
+      <a href="contact.html">Επικοινωνία</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <nav class="f-col" aria-label="Legal">
+      <h3>Νομικά</h3>
+      <a href="refund-policy.html">Πολιτική Επιστροφών</a>
+      <a href="terms.html">Όροι Χρήσης</a>
+      <a href="privacy.html">Πολιτική Απορρήτου</a>
+      <a href="#" class="js-cookie-settings">Cookies</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <div class="container fb-inner">
+      <p>© <span id="year"></span> greeksiptv.gr · <span>Με επιφύλαξη παντός δικαιώματος.</span></p>
+      <p class="fb-pay"><i class="fa-solid fa-lock"></i> <span>Ασφαλείς πληρωμές</span>
+        <i class="fa-brands fa-cc-visa" aria-label="Visa"></i><i class="fa-brands fa-cc-mastercard" aria-label="Mastercard"></i><i class="fa-brands fa-cc-paypal" aria-label="PayPal"></i><i class="fa-brands fa-cc-apple-pay" aria-label="Apple Pay"></i><i class="fa-brands fa-google-pay" aria-label="Google Pay"></i></p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa="Hi *TV Service*! I need more info" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script src="site.js"></script>
+<script src="animations.js"></script>
+<script src="offer.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768" width="512" height="768">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1b5e"/><stop offset=".38" stop-color="#7b3fa0"/>
+      <stop offset=".62" stop-color="#e0729a"/><stop offset=".8" stop-color="#ffb38a"/><stop offset="1" stop-color="#2a1640"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff4d6"/><stop offset=".45" stop-color="#ffd59a" stop-opacity=".9"/><stop offset="1" stop-color="#ffb38a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8ef0a8"/><stop offset="1" stop-color="#2fae6e"/></linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a5a9e"/><stop offset="1" stop-color="#2b1d4a"/></linearGradient>
+    <radialGradient id="glowC" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#7ff9ff" stop-opacity=".9"/><stop offset="1" stop-color="#7ff9ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowP" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff8ff0" stop-opacity=".9"/><stop offset="1" stop-color="#ff8ff0" stop-opacity="0"/></radialGradient>
+    <linearGradient id="robot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9c6e8"/></linearGradient>
+    <linearGradient id="balloon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff6b6b"/><stop offset=".5" stop-color="#ffd166"/><stop offset="1" stop-color="#ff6b6b"/></linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset=".55" stop-color="#050d1f" stop-opacity="0"/><stop offset="1" stop-color="#050d1f" stop-opacity=".95"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <rect width="512" height="768" fill="url(#sky)"/>
+  <!-- stars -->
+  <g fill="#fff">
+    <circle cx="40" cy="60" r="1.6"/><circle cx="120" cy="30" r="1.2"/><circle cx="210" cy="80" r="1.8"/><circle cx="300" cy="40" r="1.3"/>
+    <circle cx="380" cy="90" r="1.6"/><circle cx="470" cy="50" r="1.2"/><circle cx="440" cy="150" r="1"/><circle cx="70" cy="170" r="1.1"/>
+    <path d="M160 130l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" opacity=".9"/><path d="M420 210l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" opacity=".8"/>
+  </g>
+  <!-- sun glow -->
+  <circle cx="256" cy="430" r="190" fill="url(#sun)"/>
+  <!-- far floating islands -->
+  <g opacity=".55">
+    <path d="M52 300c20-10 70-10 90 0l-16 30-30 20-24-22z" fill="#5b3f86"/><ellipse cx="97" cy="300" rx="46" ry="9" fill="#5fcf92"/>
+    <path d="M392 250c18-8 60-8 78 0l-14 26-26 16-22-18z" fill="#5b3f86"/><ellipse cx="431" cy="250" rx="40" ry="8" fill="#5fcf92"/>
+  </g>
+  <!-- clouds -->
+  <g fill="#fff" opacity=".85">
+    <ellipse cx="70" cy="420" rx="60" ry="16"/><ellipse cx="105" cy="408" rx="34" ry="18"/>
+    <ellipse cx="450" cy="380" rx="62" ry="15"/><ellipse cx="420" cy="368" rx="30" ry="16"/>
+  </g>
+  <!-- hot-air balloon -->
+  <g transform="translate(372 150)">
+    <path d="M0 0c-34 0-50 26-50 50 0 30 30 52 42 66h16c12-14 42-36 42-66 0-24-16-50-50-50z" fill="url(#balloon)"/>
+    <path d="M0 0c-12 0-18 26-18 50 0 30 10 52 12 66h12c2-14 12-36 12-66 0-24-6-50-18-50z" fill="#fff" opacity=".35"/>
+    <path d="M-8 116l-4 16M8 116l4 16" stroke="#5b3f2a" stroke-width="2"/>
+    <rect x="-14" y="130" width="28" height="18" rx="4" fill="#8b5a2b"/>
+  </g>
+  <!-- main floating island -->
+  <path d="M86 470c50-22 290-22 340 0-10 40-60 70-100 110-24 24-44 70-70 70s-46-46-70-70c-40-40-90-70-100-110z" fill="url(#rock)"/>
+  <path d="M170 560c10 30 30 70 86 90" stroke="#9a7ac0" stroke-width="3" fill="none" opacity=".5"/>
+  <path d="M300 540c-6 34-20 62-44 110" stroke="#9a7ac0" stroke-width="3" fill="none" opacity=".4"/>
+  <ellipse cx="256" cy="470" rx="172" ry="26" fill="url(#grass)"/>
+  <!-- waterfall -->
+  <path d="M390 476c6 40 8 120 4 200" stroke="#bff3ff" stroke-width="8" fill="none" opacity=".6" stroke-linecap="round"/>
+  <!-- glowing mushrooms -->
+  <circle cx="140" cy="420" r="60" fill="url(#glowC)" filter="url(#blur)"/>
+  <rect x="133" y="398" width="14" height="70" rx="6" fill="#e8f7ff"/>
+  <path d="M96 404c0-40 88-40 88 0z" fill="#56e3f2"/><circle cx="118" cy="388" r="6" fill="#fff" opacity=".85"/><circle cx="150" cy="380" r="5" fill="#fff" opacity=".85"/>
+  <circle cx="190" cy="440" r="34" fill="url(#glowP)" filter="url(#blur)"/>
+  <rect x="185" y="432" width="10" height="36" rx="4" fill="#fbe8ff"/>
+  <path d="M166 436c0-24 48-24 48 0z" fill="#ff7fe6"/><circle cx="182" cy="425" r="4" fill="#fff" opacity=".85"/>
+  <circle cx="360" cy="444" r="30" fill="url(#glowC)" filter="url(#blur)"/>
+  <rect x="356" y="436" width="9" height="32" rx="4" fill="#e8f7ff"/>
+  <path d="M340 440c0-22 42-22 42 0z" fill="#56e3f2"/>
+  <!-- robot -->
+  <g transform="translate(270 360)">
+    <ellipse cx="0" cy="112" rx="42" ry="8" fill="#1f7a4d" opacity=".5"/>
+    <line x1="0" y1="-8" x2="0" y2="-34" stroke="#b9c6e8" stroke-width="4"/>
+    <circle cx="0" cy="-38" r="8" fill="#ffd166"/><circle cx="0" cy="-38" r="16" fill="#ffd166" opacity=".25"/>
+    <circle cx="0" cy="30" r="44" fill="url(#robot)"/>
+    <rect x="-30" y="10" width="60" height="34" rx="16" fill="#1d2b55"/>
+    <circle cx="-13" cy="27" r="7" fill="#7ff9ff"/><circle cx="13" cy="27" r="7" fill="#7ff9ff"/>
+    <circle cx="-11" cy="25" r="2.4" fill="#fff"/><circle cx="15" cy="25" r="2.4" fill="#fff"/>
+    <path d="M-8 52c5 5 11 5 16 0" stroke="#ff7fae" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="-30" cy="46" r="5" fill="#ff9fc4" opacity=".7"/><circle cx="30" cy="46" r="5" fill="#ff9fc4" opacity=".7"/>
+    <rect x="-24" y="70" width="48" height="36" rx="14" fill="url(#robot)"/>
+    <circle cx="0" cy="88" r="7" fill="#56e3f2"/>
+    <path d="M-24 80c-14 0-22-12-24-24" stroke="#b9c6e8" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M24 80c14-2 20-16 22-30" stroke="#b9c6e8" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <circle cx="-48" cy="54" r="6" fill="#fff"/><circle cx="46" cy="48" r="6" fill="#fff"/>
+  </g>
+  <!-- fireflies -->
+  <g fill="#fff6b0"><circle cx="220" cy="330" r="2.5"/><circle cx="330" cy="310" r="2"/><circle cx="110" cy="350" r="2"/><circle cx="400" cy="420" r="2.4"/><circle cx="240" cy="400" r="1.8"/></g>
+  <!-- darker bottom for the label -->
+  <rect width="512" height="768" fill="url(#fade)"/>
+</svg>

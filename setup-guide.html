@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="el" data-theme="greek">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Οδηγός εγκατάστασης Greek IPTV για κάθε συσκευή | Greeks IPTV</title>
+  <meta name="description" content="Πώς να εγκαταστήσετε Greek IPTV σε Samsung, LG, Fire TV Stick, Android, iPhone, MAG, Windows, Mac και Enigma2. Απλές οδηγίες βήμα-βήμα.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://greeksiptv.gr/setup-guide.html">
+  <meta name="theme-color" content="#050d1f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Greeks IPTV">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:url" content="https://greeksiptv.gr/setup-guide.html">
+  <meta property="og:title" content="Οδηγός εγκατάστασης Greek IPTV για κάθε συσκευή | Greeks IPTV">
+  <meta property="og:description" content="Πώς να εγκαταστήσετε Greek IPTV σε Samsung, LG, Fire TV Stick, Android, iPhone, MAG, Windows, Mac και Enigma2. Απλές οδηγίες βήμα-βήμα.">
+  <meta property="og:image" content="https://greeksiptv.gr/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="author" content="Greeks IPTV">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="fonts/icons/icons.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://greeksiptv.gr/"}, {"@type": "ListItem", "position": 2, "name": "Οδηγός εγκατάστασης", "item": "https://greeksiptv.gr/setup-guide.html"}]}, {"@context": "https://schema.org", "@type": "HowTo", "name": "Εγκατάσταση IPTV σε Amazon Fire TV Stick", "step": [{"@type": "HowToStep", "text": "Εγκαταστήστε και ανοίξτε την εφαρμογή Downloader."}, {"@type": "HowToStep", "text": "Πληκτρολογήστε τον κωδικό 78522 και πατήστε Go."}, {"@type": "HowToStep", "text": "Εγκαταστήστε την εφαρμογή IPTV Smarters Pro."}, {"@type": "HowToStep", "text": "Συνδεθείτε με Xtream Codes API με username, password και URL."}]}]</script>
+</head>
+<body data-page="guide">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">GREEKS <span>IPTV</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">Αρχική</a>
+      <a href="/#pricing">Τιμές</a>
+      <a href="/reseller.html">Πρόγραμμα Μεταπωλητών</a>
+      <a href="/contact.html">Επικοινωνία</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-cut js-trial" data-wa="Hi! I want a free trial">Δωρεάν δοκιμή</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="waves waves-left" aria-hidden="true"></div>
+  <div class="waves waves-right" aria-hidden="true"></div>
+  <div class="container" style="position:relative">
+    <div class="crumbs"><a href="index.html">Αρχική</a> / Οδηγός εγκατάστασης</div>
+    <h1>Οδηγός εγκατάστασης Greek IPTV</h1>
+    <p>Βήμα-βήμα οδηγίες εγκατάστασης Greek IPTV για κάθε συσκευή. Η εγκατάσταση διαρκεί λίγα λεπτά. Αν κολλήσετε, στείλτε μας μήνυμα στο WhatsApp.</p>
+  </div>
+</section>
+
+<div class="prose" style="padding-bottom:20px">
+  <div class="note">
+    <strong>Πριν ξεκινήσετε:</strong> Μετά την πληρωμή θα λάβετε στο email σας τα στοιχεία σύνδεσης: <strong>username</strong>, <strong>password</strong> και <strong>URL</strong> (ή M3U link / portal για MAG). Χρειάζεστε σύνδεση internet τουλάχιστον <strong>15 Mbps</strong>. Για την καλύτερη εικόνα προτιμήστε καλώδιο Ethernet αντί για Wi-Fi.
+  </div>
+</div>
+
+<nav class="guide-nav" aria-label="Συσκευές">
+  <a href="#smart-tv"><i class="fa-solid fa-tv"></i>Samsung & LG Smart TV</a>
+  <a href="#firestick"><i class="fa-brands fa-amazon"></i>Amazon Fire TV Stick</a>
+  <a href="#android"><i class="fa-brands fa-android"></i>Android</a>
+  <a href="#ios"><i class="fa-brands fa-apple"></i>iPhone, iPad & Apple TV</a>
+  <a href="#mag"><i class="fa-solid fa-hard-drive"></i>MAG Box</a>
+  <a href="#windows"><i class="fa-brands fa-windows"></i>Windows & Mac</a>
+  <a href="#enigma2"><i class="fa-solid fa-satellite-dish"></i>Enigma2 / Linux δέκτες</a>
+</nav>
+
+<div class="guide">
+  <details id="smart-tv" open>
+    <summary><i class="fa-solid fa-tv dev"></i>Samsung & LG Smart TV</summary>
+    <div class="body">
+<p>Κατεβάστε την εφαρμογή <strong>IPTV Smarters Pro</strong> από το κατάστημα εφαρμογών της τηλεόρασής σας.</p>
+<h4>Samsung</h4>
+<ol><li>Πατήστε το κουμπί <strong>Smart Hub</strong> στο τηλεχειριστήριο.</li>
+<li>Αναζητήστε <strong>IPTV Smarters Pro</strong> και εγκαταστήστε την.</li>
+<li>Ανοίξτε την εφαρμογή και συνδεθείτε με το username, το password και το URL που σας στείλαμε.</li></ol>
+<h4>LG</h4>
+<ol><li>Πατήστε <strong>Home</strong> στο τηλεχειριστήριο και ανοίξτε το <strong>LG Content Store</strong>.</li>
+<li>Αναζητήστε <strong>IPTV Smarters Pro</strong> και εγκαταστήστε την.</li>
+<li>Ανοίξτε την εφαρμογή και συνδεθείτε με το username, το password και το URL που σας στείλαμε.</li></ol>
+    </div>
+  </details>
+  <details id="firestick">
+    <summary><i class="fa-brands fa-amazon dev"></i>Amazon Fire TV Stick</summary>
+    <div class="body">
+<ol><li>Εγκαταστήστε και ανοίξτε την εφαρμογή <strong>Downloader</strong> από το Amazon Appstore.</li>
+<li>Πληκτρολογήστε τον κωδικό <code>78522</code> και πατήστε <strong>Go</strong>.</li>
+<li>Θα ξεκινήσει η λήψη της εφαρμογής <strong>IPTV Smarters Pro</strong>. Όταν ολοκληρωθεί, πατήστε <strong>Install</strong>.</li>
+<li>Ανοίξτε την εφαρμογή, επιλέξτε <strong>Login with Xtream Codes API</strong> και εισάγετε username, password και URL.</li>
+<li>Καλή θέαση!</li></ol>
+<p>Αν το Downloader δεν επιτρέπει την εγκατάσταση, ενεργοποιήστε το <strong>Install unknown apps</strong> για το Downloader στις Ρυθμίσεις &gt; My Fire TV &gt; Developer options.</p>
+    </div>
+  </details>
+  <details id="android">
+    <summary><i class="fa-brands fa-android dev"></i>Android (κινητό, tablet, Android TV box)</summary>
+    <div class="body">
+<ol><li>Ανοίξτε το <strong>Google Play Store</strong>.</li>
+<li>Αναζητήστε <strong>XCIPTV Player</strong> και πατήστε <strong>Εγκατάσταση</strong>.</li>
+<li>Ανοίξτε την εφαρμογή.</li>
+<li>Εισάγετε τα στοιχεία σύνδεσης που σας στείλαμε και πατήστε <strong>Login</strong>.</li>
+<li>Έτοιμο!</li></ol>
+    </div>
+  </details>
+  <details id="ios">
+    <summary><i class="fa-brands fa-apple dev"></i>iPhone, iPad & Apple TV</summary>
+    <div class="body">
+<ol><li>Κατεβάστε την εφαρμογή <strong>Smarters Player Lite</strong> από το <a href="https://apps.apple.com/app/smarters-player-lite/id1628995509" target="_blank" rel="noopener">App Store</a>, ή αναζητήστε τη στο App Store.</li>
+<li>Ανοίξτε την εφαρμογή και επιλέξτε σύνδεση με <strong>Xtream Codes API</strong>.</li>
+<li>Εισάγετε τα στοιχεία σύνδεσης που σας στείλαμε και πατήστε <strong>ADD USER</strong>.</li>
+<li>Περιμένετε λίγα δευτερόλεπτα να φορτώσει η λίστα.</li>
+<li>Πατήστε <strong>Live TV</strong> και επιλέξτε την ομάδα καναλιών που θέλετε.</li>
+<li>Επιλέξτε ένα κανάλι και πατήστε δύο φορές τη μικρή οθόνη για πλήρη οθόνη.</li></ol>
+    </div>
+  </details>
+  <details id="mag">
+    <summary><i class="fa-solid fa-hard-drive dev"></i>MAG Box (250 / 254 / 256 …)</summary>
+    <div class="body">
+<p class="note" style="margin-top:0">Για την ενεργοποίηση σε MAG, στείλτε μας μαζί με την παραγγελία τη <strong>MAC διεύθυνση</strong> που βρίσκεται στην ετικέτα στο πίσω μέρος της συσκευής. Η ενεργοποίηση γίνεται απομακρυσμένα και μετά σας στέλνουμε το URL του portal.</p>
+<ol><li>Όταν εμφανιστεί η κεντρική οθόνη, μπείτε στις <strong>Settings</strong> και πατήστε <strong>SETUP/SET</strong> στο τηλεχειριστήριο.</li>
+<li>Επιλέξτε <strong>System Settings</strong> και μετά <strong>Servers</strong>.</li>
+<li>Επιλέξτε <strong>Portals</strong>.</li>
+<li>Στο <strong>Portal 1 Name</strong> γράψτε ένα όνομα και στο <strong>Portal 1 URL</strong> το URL που σας στείλαμε.</li>
+<li>Πατήστε <strong>OK</strong> για αποθήκευση.</li>
+<li>Πατήστε <strong>EXIT</strong> στο τηλεχειριστήριο.</li>
+<li>Επανεκκινήστε τη συσκευή πατώντας <strong>OK</strong>.</li></ol>
+    </div>
+  </details>
+  <details id="windows">
+    <summary><i class="fa-brands fa-windows dev"></i>Windows & Mac</summary>
+    <div class="body">
+<ol><li>Ανοίξτε τον ιστότοπο <a href="https://www.iptvsmarters.com" target="_blank" rel="noopener">iptvsmarters.com</a> και επιλέξτε <strong>Downloads</strong>.</li>
+<li>Κατεβάστε την τελευταία έκδοση του <strong>IPTV Smarters Pro</strong> για Windows ή macOS.</li>
+<li>Ανοίξτε το αρχείο που κατεβάσατε. Αν τα Windows ζητήσουν άδεια, επιλέξτε <strong>Ναι</strong>.</li>
+<li>Η εγκατάσταση διαρκεί ένα με δύο λεπτά.</li>
+<li>Ανοίξτε το πρόγραμμα, πατήστε <strong>Add new user</strong> και επιλέξτε <strong>Login with Xtream Codes API</strong>.</li>
+<li>Εισάγετε τα στοιχεία σας και ξεκινήστε!</li></ol>
+    </div>
+  </details>
+  <details id="enigma2">
+    <summary><i class="fa-solid fa-satellite-dish dev"></i>Enigma2 / Linux δέκτες</summary>
+    <div class="body">
+<ol><li>Στον δέκτη, μεταβείτε στο <strong>Settings &gt; Setup &gt; System &gt; Network Device &gt; Setup Adapter &gt; Settings</strong> και σημειώστε τη διεύθυνση IP (ξεκινά με 192.168…).</li>
+<li>Στον υπολογιστή σας κατεβάστε και ανοίξτε το <strong>PuTTY</strong>.</li>
+<li>Εισάγετε την IP του δέκτη, θύρα <code>23</code>, και πατήστε <strong>Open</strong>.</li>
+<li>Συνδεθείτε με username και password <code>root</code>.</li>
+<li>Επικολλήστε την εντολή που θα σας στείλουμε μετά την παραγγελία. Μοιάζει με αυτή:</li></ol>
+<pre>wget -O /etc/enigma2/iptv.sh "ΤΟ_M3U_LINK_ΣΑΣ" &amp;&amp; chmod 777 /etc/enigma2/iptv.sh &amp;&amp; /etc/enigma2/iptv.sh</pre>
+<ol start="6"><li>Κάντε δεξί κλικ για επικόλληση και πατήστε <strong>Enter</strong>.</li>
+<li>Γράψτε <code>reboot</code> για επανεκκίνηση του δέκτη.</li></ol>
+    </div>
+  </details>
+  <details id="troubleshooting">
+    <summary><i class="fa-solid fa-screwdriver-wrench dev"></i>Προβλήματα & λύσεις</summary>
+    <div class="body">
+      <h4>Η εικόνα κολλάει (buffering)</h4>
+      <ol><li>Επανεκκινήστε το router και τη συσκευή σας.</li>
+      <li>Συνδέστε τη συσκευή με καλώδιο Ethernet ή φέρτε την πιο κοντά στο router.</li>
+      <li>Κλείστε άλλες εφαρμογές ή downloads που χρησιμοποιούν το internet.</li>
+      <li>Ελέγξτε την ταχύτητά σας στο <a href="https://fast.com" target="_blank" rel="noopener">fast.com</a>. Χρειάζεστε τουλάχιστον 15 Mbps.</li>
+      <li>Στις ρυθμίσεις της εφαρμογής δοκιμάστε άλλον player (π.χ. «VLC» ή «Native»).</li></ol>
+      <h4>Η εφαρμογή δεν συνδέεται</h4>
+      <ol><li>Ελέγξτε ότι username, password και URL είναι γραμμένα ακριβώς όπως στο email, χωρίς κενά.</li>
+      <li>Βεβαιωθείτε ότι η συνδρομή σας δεν έχει λήξει.</li>
+      <li>Μην είστε συνδεδεμένοι σε περισσότερες συσκευές από όσες επιτρέπει το πακέτο σας.</li></ol>
+      <p>Αν το πρόβλημα συνεχίζεται, στείλτε μας στιγμιότυπο οθόνης του σφάλματος στο <a href="#" data-wa="Hi! I need help with the setup">WhatsApp</a> ή στο <a href="mailto:greeksiptv@gmail.com?subject=Setup%20help">email</a>.</p>
+    </div>
+  </details>
+</div>
+
+<div class="cta-band">
+  <a href="#" class="btn btn-cut btn-lg" data-wa="Hi! I need help with the setup"><i class="fa-brands fa-whatsapp"></i> Βοήθεια μέσω WhatsApp</a>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a href="index.html" class="logo">GREEKS <span>IPTV</span></a>
+      <p>Η υπηρεσία μας προσφέρει υψηλής ποιότητας streaming με φιλική υποστήριξη πριν και μετά την αγορά.</p>
+      <div class="f-social">
+        <a href="#" data-wa="Hi *TV Service*! I need more info" aria-label="WhatsApp" class="fs-wa"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:greeksiptv@gmail.com?subject=greeksiptv.gr" aria-label="Email" class="fs-mail"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+    <nav class="f-col" aria-label="Services">
+      <h3>Υπηρεσίες</h3>
+      <a href="index.html#pricing">Τιμές</a>
+      <a href="setup-guide.html">Οδηγός εγκατάστασης</a>
+      <a href="/blog/">Blog</a>
+      <a href="reseller.html">Πρόγραμμα Μεταπωλητών</a>
+      <a href="#" data-wa="Hi! I want a free trial">Δωρεάν δοκιμή</a>
+    </nav>
+    <nav class="f-col" aria-label="Company">
+      <h3>Εταιρεία</h3>
+      <a href="about.html">Σχετικά με εμάς</a>
+      <a href="contact.html">Επικοινωνία</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <nav class="f-col" aria-label="Legal">
+      <h3>Νομικά</h3>
+      <a href="refund-policy.html">Πολιτική Επιστροφών</a>
+      <a href="terms.html">Όροι Χρήσης</a>
+      <a href="privacy.html">Πολιτική Απορρήτου</a>
+      <a href="#" class="js-cookie-settings">Cookies</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <div class="container fb-inner">
+      <p>© <span id="year"></span> greeksiptv.gr · <span>Με επιφύλαξη παντός δικαιώματος.</span></p>
+      <p class="fb-pay"><i class="fa-solid fa-lock"></i> <span>Ασφαλείς πληρωμές</span>
+        <i class="fa-brands fa-cc-visa" aria-label="Visa"></i><i class="fa-brands fa-cc-mastercard" aria-label="Mastercard"></i><i class="fa-brands fa-cc-paypal" aria-label="PayPal"></i><i class="fa-brands fa-cc-apple-pay" aria-label="Apple Pay"></i><i class="fa-brands fa-google-pay" aria-label="Google Pay"></i></p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa="Hi *TV Service*! I need more info" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script src="site.js"></script>
+<script src="animations.js"></script>
+<script src="offer.js"></script>
+</body>
+</html>
